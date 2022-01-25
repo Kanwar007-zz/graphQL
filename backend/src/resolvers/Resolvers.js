@@ -7,12 +7,16 @@ const resolvers ={
      return  Movie.find({})
  },
  addMovie:(args)=>{
-     return{
-         name:args.name,
-         type:args.type,
-         year:args.year
-
-     }
+     let movie = new Movie(
+        {
+            name:args.name,
+            type:args.type,
+            year:args.year
+   
+        }
+     )
+     movie.save();
+     return movie;
  }
 
 }
