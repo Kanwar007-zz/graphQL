@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Header extends Component {
-    render() {
-        return (
-            <div className='topnav'>
+const Header=()=> {
+    return (
+        <div className='topnav'>
                 <a className='log' href='/'> Movie Display</a>
             <div className='search-container'>
                 <form href='/'>
@@ -12,8 +11,8 @@ class Header extends Component {
                 </form>
             </div> 
             </div>
-        );
-    }
+
+    );
 }
 
 export default Header;
