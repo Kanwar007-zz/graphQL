@@ -9,7 +9,7 @@ body {
 .topnav {
   overflow: hidden;
   background: rgb(224, 30, 30);
-  background: linear-gradient(90deg, rgba(41,41,41,0.9784956218815651) 19%, rgba(233,233,233,1) 100%);
+  background: linear-gradient(90deg, rgba(245, 240, 240, 0.978) 19%, rgba(233,233,233,1) 100%);
 }
 
 .topnav a {
@@ -124,7 +124,7 @@ form label,button{
   left: 0;
   bottom: 0;
   width: 100%;
-  background: rgb(41,41,41);
+  background: rgb(241, 240, 240)0%, 16%);
   background: linear-gradient(260deg, rgba(41,41,41,0.9784956218815651) 19%, rgba(233,233,233,1) 100%);  color: black;
   text-align: center;
 }

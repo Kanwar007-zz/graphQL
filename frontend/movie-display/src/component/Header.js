@@ -8,7 +8,7 @@ class Header extends Component {
             <div className='search-container'>
                 <form href='/'>
                     <input type='text' placeholder='search movie ' name='search'/>
-                   <button type='submit'> Search</button>
+                   <button type='submit'> <i className="fa fa-search"></i></button>
                 </form>
             </div> 
             </div>

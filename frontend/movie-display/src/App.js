@@ -6,7 +6,6 @@ class App extends Component {
     render() {
         return (
             <div>
-                hello from app js 
                 <Header/>
                 <footer/>
 
