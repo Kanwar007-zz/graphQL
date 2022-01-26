@@ -7,6 +7,8 @@ const { graphqlHTTP } = require('express-graphql');
 const movieSchema = require('./schema/schema')
 const resolvers= require('./resolvers/Resolvers')
 
+const cors = require('cors')
+
 mongoose.connect('mongodb+srv://admin:admin@cluster0.xk5z0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', )
 .then(()=>{console.log('connected data base')})
 .catch(error=()=>{
@@ -18,7 +20,7 @@ app.get('/',(request,response)=>{
 app.listen(4000,()=>{
     console.log('server is running');
 })
-
+app.use(cors());
 //const schema=buildSchema(`
 //  type Query {
   //    name : String
