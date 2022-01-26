@@ -15,6 +15,7 @@ const allMovies = gql`
 
 function Movies() {
     const { loading, error, data } = useQuery(allMovies);
+    const image='https://rb.gy/mwzdxh'
   
     if (loading) return null;
     if (error) return `Error! ${error}`;
@@ -27,7 +28,7 @@ function Movies() {
                     name={movie.name}
                     type={movie.typeofmoive}
                     year={movie.year}
-                    image={movie.image}/>
+                    image={image}/>
                 })} 
                </div>
     );
