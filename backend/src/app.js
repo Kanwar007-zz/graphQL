@@ -12,7 +12,7 @@ const cors = require('cors')
 mongoose.connect('mongodb+srv://admin:admin@cluster0.xk5z0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', )
 .then(()=>{console.log('connected data base')})
 .catch(error=()=>{
-    console.log('error');
+    console.log('error'+error);
 })
 app.get('/',(request,response)=>{
     response.send('back end call')
