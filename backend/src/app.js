@@ -9,7 +9,7 @@ const resolvers= require('./resolvers/Resolvers')
 
 const cors = require('cors')
 
-mongoose.connect('mongodb+srv://admin:admin@cluster0.xk5z0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', )
+mongoose.connect('url of mongo db', )
 .then(()=>{console.log('connected data base')})
 .catch(error=()=>{
     console.log('error'+error);
